@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raushan Kumar | Portfolio</title>
+<!-- v2.0 -->
+<style>
+:root {
+    --bg: #f4f6f8;
+    --text: #333;
+    --card: #ffffff;
+    --primary: #0a2540;
+}
+
+body.dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --card: #1e293b;
+    --primary: #38bdf8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: all 0.4s ease;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary), #123c66);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+nav {
+    background: var(--card);
+    padding: 12px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.toggle {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: none;
+}
+
+form button {
+    background: var(--primary);
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Raushan Kumar</h1>
+    <p>Backend Operations & IT Support | MCA Graduate</p>
+    <a class="btn" href="Raushan_Kumar_Resume.pdf" download>Download Resume</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <span class="toggle" onclick="toggleDark()">🌙 Dark Mode</span>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        MCA graduate with 1.6+ years of experience at Genpact in backend operations,
+        ticket handling, SOP compliance, and troubleshooting.
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+        Java, HTML, CSS, MySQL, Ticketing Systems, Backend Operations, SOP Compliance
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+        <strong>Process Associate – Genpact Pvt. Ltd.</strong><br>
+        March 2024 – Present<br>
+        Backend queues, issue resolution, documentation, and quality control.
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <strong>Calculator Project</strong><br><br>
+        <a class="btn" href="https://rajanrajsah.github.io/Calcultor_Project/" target="_blank">Live Demo</a>
+        <a class="btn" href="https://github.com/Rajanrajsah/Calcultor_Project" target="_blank">Source Code</a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+        <form action="mailto:aryanraushankumar@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2025 Raushan Kumar | Portfolio
+</footer>
+
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
