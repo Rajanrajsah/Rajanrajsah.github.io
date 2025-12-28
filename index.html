@@ -82,7 +82,27 @@ section {
     margin: auto;
     padding: 50px 20px;
 }
+.success-msg {
+  display: none;
+  color: green;
+  margin-top: 15px;
+  font-weight: 600;
+}
 
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 h2 {
     color: var(--primary);
     margin-bottom: 15px;
@@ -205,7 +225,32 @@ footer {
         </form>
     </div>
 </section>
+    <section class="contact-section">
+  <h2>Contact Me</h2>
 
+  <form id="contactForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Success Message -->
+  <p id="successMsg" class="success-msg">
+    ✅ Thank you! Your message has been submitted successfully.
+  </p>
+    </section>
+
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop page refresh
+
+    // Show success message
+    document.getElementById("successMsg").style.display = "block";
+
+    // Clear form
+    this.reset();
+});
 <footer>
     © 2025 Raushan Kumar | Portfolio
 </footer>
