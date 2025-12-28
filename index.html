@@ -241,7 +241,14 @@ footer {
     ✅ Thank you! Your message has been submitted successfully.
   </p>
     </section>
+<footer>
+    © 2025 Raushan Kumar | Portfolio
+</footer>
 
+<script>
+function toggleDark() {
+    document.body.classList.toggle("dark");
+}
     document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault(); // stop page refresh
 
@@ -251,18 +258,9 @@ footer {
     // Clear form
     this.reset();
 });
-
     setTimeout(() => {
   document.getElementById("successMsg").style.display = "none";
 }, 5000);
-<footer>
-    © 2025 Raushan Kumar | Portfolio
-</footer>
-
-<script>
-function toggleDark() {
-    document.body.classList.toggle("dark");
-}
 </script>
 
 </body>
